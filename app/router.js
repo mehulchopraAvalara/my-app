@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.mount('library', { as: 'lib' });
+  this.route('home');
 });
 
 export default Router;
